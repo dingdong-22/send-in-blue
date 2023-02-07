@@ -65,6 +65,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: 1px;
 }
 
 .title_text {
@@ -75,6 +76,7 @@ hr {
 }
 
 /* main part */
+
 .log-in-container {
   display: flex;
   background-color: var(--clr-log-in-container-bg);
@@ -99,7 +101,7 @@ hr {
 .password_input {
   padding: 0px 7px 0px 7px;
   width: calc(100% - 7px * 2);
-  height: 27px;
+  height: 32px;
   border: 1px solid var(--clr-input-border);
   border-radius: 3px;
 }
@@ -128,6 +130,16 @@ hr {
 .horizontal_line_or {
   display: flex;
   align-items: center;
+}
+
+#toggle_show_password_button {
+  background-color: white;
+  color: black;
+}
+
+#toggle_show_password_button.showing {
+  background-color: var(--clr-log-in-button);
+  color: white;
 }
 
 /* bottom part */

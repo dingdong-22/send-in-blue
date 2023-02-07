@@ -5,6 +5,12 @@ function LogInBox() {
   let [password, setPassword] = useState("");
   let [showPassword, setShowPassword] = useState(false);
 
+  function toggleShowPassword() {
+    setShowPassword(!showPassword);
+    let toggleButton = document.getElementById("toggle_show_password_button");
+    toggleButton.classList.toggle("showing");
+  }
+
   function handleSubmit() {
     alert(`Credentials Entered\nEmail: ${email}\nPassword: ${password}`);
   }
@@ -29,7 +35,10 @@ function LogInBox() {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       ></input>
-      <button onClick={() => setShowPassword(!showPassword)}>
+      <button
+        id="toggle_show_password_button"
+        onClick={() => toggleShowPassword()}
+      >
         Show Password
       </button>
       <button className="log-in-button" onClick={() => handleSubmit()}>
