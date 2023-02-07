@@ -1,38 +1,149 @@
+:root {
+  --clr-main-bg: #044a75;
+  --clr-input-border: #c0ccda;
+  --clr-log-in-container-bg: rgb(255, 255, 255);
+  --clr-log-in-button: #0092ff;
+
+  --clr-help-options-hover: #007cd9;
+  --clr-text-white: white;
+  --clr-text-black: black;
+}
+
+body {
+  background-color: var(--clr-main-bg);
+  overflow-y: scroll;
+}
+
+h1 {
+  color: var(--clr-text-white);
+}
+
+h2 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+button {
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #4285f4;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  display: inline-block;
+  margin: 0px 5px 0px 5px;
+  width: 140px;
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  place-items: center;
+  color: var(--clr-text-black);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* top part */
+
+.title_logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.full_title {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_text {
+  font-size: 1.8rem;
+  position: relative;
+  top: -5px;
+  margin: 35px 0px 35px 0px;
+}
+
+/* main part */
+.log-in-container {
+  display: flex;
+  background-color: var(--clr-log-in-container-bg);
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  width: 330;
+  height: 415px;
+  border-radius: 3px;
+  padding: 20px 35px 30px 35px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-title {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: 8px;
+  font-size: 1.1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.email_input,
+.password_input {
+  padding: 0px 7px 0px 7px;
+  width: calc(100% - 7px * 2);
+  height: 27px;
+  border: 1px solid var(--clr-input-border);
+  border-radius: 3px;
+}
+
+:where(.email_input, .password_input):focus {
+  outline: 2px solid rgb(199, 221, 240);
+}
+
+.log-in-button {
+  background-color: var(--clr-log-in-button);
+  color: var(--clr-text-white);
+  border: none;
+  height: 35px;
+}
+
+.log-in-button:hover {
+  filter: brightness(90%);
+  color: var(--clr-text-white);
+}
+
+.google_log_in_button,
+.apple_log_in_button {
+  height: 40px;
+}
+
+.horizontal_line_or {
+  display: flex;
+  align-items: center;
+}
+
+/* bottom part */
+
+.help-container {
+  display: flex;
+  color: var(--clr-text-white);
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.help-options-text {
+  color: var(--clr-text-white);
+}
+
+.help-options-text:hover {
+  text-decoration: underline;
+  color: var(--clr-help-options-hover);
 }
