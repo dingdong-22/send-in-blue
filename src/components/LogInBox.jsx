@@ -41,9 +41,15 @@ function LogInBox() {
       >
         Show Password
       </button>
-      <button className="log-in-button" onClick={() => handleSubmit()}>
+      {/* <button className="log-in-button" onClick={() => handleSubmit()}>
         Log In
-      </button>
+      </button> */}
+      <a
+        className="log-in-button"
+        href="https://sendinblue-dashboard-ae1371.netlify.app/"
+      >
+        Log In
+      </a>
       <div className="horizontal_line_or">
         <hr />
         OR

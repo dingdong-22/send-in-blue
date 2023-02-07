@@ -146,11 +146,21 @@ hr {
   color: white;
 }
 
-.google-logo, .apple-logo {
-    height: 19px;
-    width: 19px;
-    margin-right: 20px;
+.google-logo,
+.apple-logo {
+  height: 19px;
+  width: 19px;
+  margin-right: 20px;
 }
+
+.log-in-button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
 /* bottom part */
 
 .help-container {
