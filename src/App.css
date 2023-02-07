@@ -16,6 +16,7 @@ body {
 
 h1 {
   color: var(--clr-text-white);
+  font-weight: 550;
 }
 
 h2 {
@@ -125,6 +126,9 @@ hr {
 .google_log_in_button,
 .apple_log_in_button {
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .horizontal_line_or {
@@ -142,6 +146,11 @@ hr {
   color: white;
 }
 
+.google-logo, .apple-logo {
+    height: 19px;
+    width: 19px;
+    margin-right: 20px;
+}
 /* bottom part */
 
 .help-container {

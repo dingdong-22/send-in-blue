@@ -49,8 +49,20 @@ function LogInBox() {
         OR
         <hr />
       </div>
-      <button className="google_log_in_button">Sign In With Google</button>
-      <button className="apple_log_in_button">Sign In With Apple</button>
+      <button className="google_log_in_button">
+        <img
+          className="google-logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png"
+        ></img>
+        Sign in with Google
+      </button>
+      <button className="apple_log_in_button">
+        <img
+          className="apple-logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png"
+        ></img>
+        Sign in with Apple
+      </button>
     </div>
   );
 }
