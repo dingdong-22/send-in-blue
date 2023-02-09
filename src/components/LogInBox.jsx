@@ -1,4 +1,6 @@
 import { useState } from "react";
+import google_logo from "../images/google_logo.png";
+import apple_logo from "../images/apple_logo.png";
 
 function LogInBox() {
   let [email, setEmail] = useState("");
@@ -56,17 +58,11 @@ function LogInBox() {
         <hr />
       </div>
       <button className="google_log_in_button">
-        <img
-          className="google-logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png"
-        ></img>
+        <img className="google-logo" src={google_logo} alt="google_logo"></img>
         Sign in with Google
       </button>
       <button className="apple_log_in_button">
-        <img
-          className="apple-logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png"
-        ></img>
+        <img className="apple-logo" src={apple_logo} alt="apple_logo"></img>
         Sign in with Apple
       </button>
     </div>
